@@ -1,0 +1,9 @@
+docker:
+  image: node
+  port: 8080
+  volume: /root/app
+
+start: npm install && node server.js
+
+paths:
+  home: /
